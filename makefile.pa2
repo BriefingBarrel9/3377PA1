@@ -1,0 +1,7 @@
+all: filecnt filedisp
+
+filecnt: filecnt.c version.c
+	g++ filecnt.c version.c -o filecnt
+
+filedisp: filedisp.c
+	g++ filedisp.c -o filedisp
